@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Safety with Formlabs resin products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Practical safety guidance for operating Formlabs SLA printers and post-processing equipment, including ventilation, hot surfaces, PPE, solvents, and device safety features." />
+  <link rel="canonical" href="https://example.com/support/safety-with-formlabs-resin-products" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Primary structured data for the article -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TechArticle",
+    "headline":"Safety with Formlabs resin products",
+    "description":"Safety guidance for Formlabs SLA printers and post-processing devices, including workspace setup, ventilation, hot surfaces, PPE, and handling of resins and solvents.",
+    "url":"https://example.com/support/safety-with-formlabs-resin-products",
+    "datePublished":"2025-04-08",
+    "dateModified":"2025-04-08",
+    "inLanguage":"en",
+    "version":"public",
+    "proficiencyLevel":"Beginner",
+    "isAccessibleForFree": true,
+    "publisher": {
+      "@type":"Organization",
+      "name":"Formlabs",
+      "url":"https://formlabs.com"
+    },
+    "about":[
+      {"@type":"Product","name":"Form 1+"},
+      {"@type":"Product","name":"Form 2"},
+      {"@type":"Product","name":"Form 3 / 3B / 3L / 3BL"},
+      {"@type":"Product","name":"Form 4 / 4L"},
+      {"@type":"Product","name":"Form Wash / Form Wash L"},
+      {"@type":"Product","name":"Form Cure / Form Cure L / Fast Cure"}
+    ],
+    "keywords":["SLA safety","Formlabs","resin","IPA","TPM","PPE","ventilation","laser safety","LED 405 nm"],
+    "articleSection":["Workplace safety","Setup and lifting","Hot surfaces","Air quality","Handling resins and solvents","PPE","Device safety","Light source safety","Maintenance"]
+  }
+  </script>
+
+  <!-- Optional FAQ block to help snippet extraction -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"How should I prepare my workspace for SLA printing?",
+        "acceptedAnswer":{"@type":"Answer","text":"Designate a ventilated area on a stable, level surface, separate from dusty or sparking equipment. Avoid closed, unventilated rooms. Follow local code requirements for occupied spaces."}
+      },
+      {
+        "@type":"Question",
+        "name":"Are there hot surfaces I should be careful with?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. Resin is typically heated to about 35 °C during printing. Heaters, resin tanks, turntables, and post-curing chambers may be hot during and after use. Allow components to cool and use thermal gloves where appropriate."}
+      },
+      {
+        "@type":"Question",
+        "name":"What PPE should I wear when handling resin or solvents?",
+        "acceptedAnswer":{"@type":"Answer","text":"Wear nitrile or neoprene gloves, safety glasses—especially during post-processing—and protective clothing with long sleeves and pants. Consider respiratory protection if SDS exposure limits might be exceeded or ventilation is insufficient."}
+      },
+      {
+        "@type":"Question",
+        "name":"Is the light source in Formlabs printers safe?",
+        "acceptedAnswer":{"@type":"Answer","text":"Laser-based printers are Class 1 Laser Devices in normal use due to enclosures and interlocks. Form 4/4L use 405 nm LEDs. Do not bypass safety interlocks."}
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Barebones, readable defaults; no heavy styling */
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; margin: 24px; max-width: 780px; }
+    h1, h2, h3 { line-height: 1.25; }
+    nav.toc { border: 1px solid #ddd; padding: 12px; margin: 16px 0; }
+    code, kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; vertical-align: top; }
+    .meta { color: #555; font-size: 0.95rem; }
+    .tldr { background: #f7f7f7; padding: 12px; border: 1px solid #eee; }
+    .note { background: #f9fbff; padding: 10px; border-left: 3px solid #5b8def; }
+  </style>
+</head>
+<body>
+
+  <h1>Safety with Formlabs resin products</h1>
+  <p class="meta"><strong>Applies to:</strong> Form 1+, Form 2, Form 3, Form 3B, Form 3BL, Form 3L, Form 4, Form 4L, Form Wash / Wash L, Form Cure / Cure L, Fast Cure</p>
+  <p class="meta"><strong>Last updated:</strong> Apr 8, 2025</p>
+
+  <p id="tldr" class="tldr"><strong>TL;DR:</strong> Use a ventilated, designated area with stable surfaces. Avoid lifting devices by covers and beware of hot surfaces after printing or post-cure. Handle resins and solvents like IPA/TPM with care, away from heat and sparks, and wear nitrile or neoprene gloves, safety glasses, and protective clothing. Printers use interlocks and enclosures for safety; do not bypass them. Always consult the Safety Data Sheet (SDS) for materials.</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <strong>Contents</strong>
+    <ul>
+      <li><a href="#workplace-safety">Workplace safety</a></li>
+      <li><a href="#setup-and-lifting">Setup and lifting</a></li>
+      <li><a href="#hot-surfaces">Hot surfaces</a></li>
+      <li><a href="#air-quality">Air quality and testing</a></li>
+      <li><a href="#handling-resins-and-solvents">Handling resins and solvents</a></li>
+      <li><a href="#ppe">Personal protective equipment (PPE)</a></li>
+      <li><a href="#device-safety-features">Device safety features</a></li>
+      <li><a href="#light-source-safety">Light source safety</a></li>
+      <li><a href="#maintenance">Maintenance and housekeeping</a></li>
+      <li><a href="#related">Related resources</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="workplace-safety">Workplace safety</h2>
+  <ul>
+    <li>Designate a specific SLA printing area on a stable, level surface, separate from dusty or sparking equipment.</li>
+    <li>Ensure the area is ventilated; avoid operating in closed, unventilated rooms. Follow local code requirements for occupied spaces and ventilation (see references in Related resources).</li>
+    <li>Keep chemicals and consumables organized; promptly clean spills and residues according to local regulations.</li>
+  </ul>
+
+  <h2 id="setup-and-lifting">Setup and lifting</h2>
+  <ul>
+    <li>Desktop devices (e.g., Form 4, Form Wash, Form Cure) can be set up by one person.</li>
+    <li>Team lift large devices (Form 4L, Wash L, Cure L) using provided straps or slings.</li>
+    <li><strong>Do not lift or move a device</strong> by its cover or moving parts, while it is powered, or while network/USB cables are connected.</li>
+  </ul>
+
+  <h2 id="hot-surfaces">Hot surfaces</h2>
+  <h3>Printers</h3>
+  <p>During printing, resin is typically heated to about <strong>35&nbsp;°C (95&nbsp;°F)</strong>. Some printers (Form 2, Form 4) heat from under the resin tank; those areas can be hot immediately after a job. Other printers (Form 3/3L) use air heaters. Allow components to cool before handling.</p>
+  <h3>Post-curing</h3>
+  <ul>
+    <li><strong>Form Cure / Form Cure L:</strong> Heaters and fans can leave surfaces and parts hot during or after cycles. Let parts and fixtures cool before removal.</li>
+    <li><strong>Form Cure (1st Gen):</strong> The turntable may remain hot after a cure cycle; allow it to cool completely before touching or cleaning.</li>
+    <li><strong>Fast Cure:</strong> LED banks generate heat; parts and trays may be hot. Use thermal-insulating gloves rated to at least <strong>160&nbsp;°C (320&nbsp;°F)</strong> when handling hot components.</li>
+  </ul>
+
+  <h2 id="air-quality">Air quality and testing</h2>
+  <p>Formlabs conducts internal room and employee exposure assessments and compares results to Section 8 exposure limits in the material SDS. Results at Formlabs facilities remain below OSHA exposure limits for chemicals used. Respirator use for routine printing tasks is considered voluntary at Formlabs.</p>
+  <p class="note"><strong>Note:</strong> Air quality results from one facility are not transferable. Conduct site-specific assessments for your own workplace and follow local requirements.</p>
+
+  <h2 id="handling-resins-and-solvents">Handling resins and solvents</h2>
+  <ul>
+    <li>Handle liquid resin and wash solvents with care; keep IPA/TPM containers closed when not in use.</li>
+    <li>Work away from heat, sparks, and open flames. Solvent vapors may be flammable.</li>
+    <li>Dispose of resin waste and used solvents per local regulations and SDS guidance.</li>
+    <li>When washing parts, follow device-specific safety guidance for Form Wash / Wash L.</li>
+  </ul>
+
+  <h2 id="ppe">Personal protective equipment (PPE)</h2>
+  <table>
+    <thead><tr><th>Area</th><th>Recommendation</th></tr></thead>
+    <tbody>
+      <tr><td>Hands</td><td>Wear <strong>nitrile or neoprene gloves</strong>. Wash skin with soap and water if exposed.</td></tr>
+      <tr><td>Eyes</td><td>Wear <strong>safety glasses</strong>, especially during post-processing and support removal.</td></tr>
+      <tr><td>Clothing</td><td>Wear long sleeves and pants; launder work clothing routinely.</td></tr>
+      <tr><td>Respiratory</td><td>Consider <strong>N95 or better</strong> if SDS exposure limits may be exceeded or ventilation is insufficient. Wet sanding helps reduce dust.</td></tr>
+    </tbody>
+  </table>
+  <p class="meta">PPE recommendations align with Sections 7 and 8 of Formlabs SLA resin SDS.</p>
+
+  <h2 id="device-safety-features">Device safety features</h2>
+  <ul>
+    <li><strong>Printers:</strong> Interlocks prevent laser or LEDs/heaters from operating with covers or doors open. Translucent covers allow monitoring of the print enclosure.</li>
+    <li><strong>Wash:</strong> Form Wash / Wash L use double lids to keep the solvent bath covered during and between cycles.</li>
+    <li><strong>Cure:</strong> Form Cure / Cure L / Fast Cure include interlocks that prevent motors, LEDs, and heaters from powering on with covers or doors open.</li>
+  </ul>
+
+  <h2 id="light-source-safety">Light source safety</h2>
+  <p>Form 1+, Form 2, and Form 3-series printers are <strong>Class&nbsp;1 Laser Devices</strong> in normal use due to enclosures and interlocks, despite using Class&nbsp;3B lasers internally. <strong>Form 4 / 4L</strong> use <strong>405&nbsp;nm LEDs</strong> instead of lasers. Do not defeat safety systems.</p>
+
+  <h2 id="maintenance">Maintenance and housekeeping</h2>
+  <ul>
+    <li>Clean resin spills and solvent residues promptly.</li>
+    <li>Perform routine maintenance on printers and Form Wash devices per the manuals to help ensure safe operation.</li>
+  </ul>
+
+  <h2 id="related">Related resources</h2>
+  <ul>
+    <li><a href="https://example.com/support/cleaning-after-a-resin-spill">Cleaning after a resin spill</a></li>
+    <li><a href="https://example.com/support/disposing-of-resin">Disposing of resin</a></li>
+    <li><a href="https://example.com/support/safety-with-form-wash">Safety with Form Wash</a></li>
+    <li><a href="https://codes.iccsafe.org/content/IMC2021P1/chapter-4-ventilation" rel="nofollow">IMC 2021, Chapter 4: Ventilation (reference)</a></li>
+  </ul>
+
+  <hr />
+  <p class="meta">Source: internal mirror of Formlabs support article PDF, published Apr 8, 2025.</p>
+</body>
+</html>
